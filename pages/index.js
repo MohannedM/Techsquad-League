@@ -4,7 +4,6 @@ import NewsCard from '../components/NewsCard'
 import { Grid } from '@material-ui/core'
 
 const HomePage = ({data}) => {
-    console.log(data.news)
     const cards =  data.news.map(singleNew => <NewsCard key={singleNew._id}
         date={singleNew.created_at}
         keywords={singleNew.keywords}
